@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  margin: 0 auto;
+  max-width: 1200px;
+  color: #fff;
+  font-family: arial;
+  font-size: 30px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    font-size: 16px;
+  }
+}
+
+//icons
+.image-container {
+  margin: 50px;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 120px; /* Establece el ancho deseado */
+  height: 120px; /* Establece la altura deseada */
+  margin-right: 30px; /* Espacio entre cada imagen */
+}

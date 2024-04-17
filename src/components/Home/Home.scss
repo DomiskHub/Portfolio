@@ -1,13 +1,5 @@
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-}
-
-.body {
-  margin: 0 auto;
+.home-container {
+  margin: auto;
   max-width: 1200px;
   color: #fff;
   font-family: arial;
@@ -17,6 +9,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.aboutme-text {
+  font-size: 30px !important;
+  letter-spacing: 10px;
 }
 
 @media screen and (max-width: 768px) {

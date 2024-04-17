@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Home.scss";
 
 const Home = () => {
   return (
     <>
-      <div className="body">
+      <div className="home-container">
         <div>
           <p>
             Hola! Soy Front End developer con enfoque especializado en React, con conocimientos en CSS, HTML, y JavaScript. Experimentada en el desarrollo de
@@ -12,6 +12,9 @@ const Home = () => {
             la excelencia en la experiencia del usuario.
           </p>
         </div>
+      </div>
+      <div className="flex justify-center items-center ">
+        <p className="text-white text-2xl aboutme-text">Conocimientos</p>
       </div>
       <div className="image-container">
         <img src="./src/assets/img/html-5-logo-svgrepo-com.svg" alt="" />

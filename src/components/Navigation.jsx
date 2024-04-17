@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div>
-      <nav className="black dark:bg-zinc-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <>
+      <nav className=" dark:bg-zinc-900 sticky top-0 z-40">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            {/* "Portfolio" */}
+            {/* "titulo" */}
             <div className="rrss relative text-center pb-3 text-white">
-              <span className="relative z-10 text-2xl font-semibold whitespace-nowrap dark:text-white">Dominique Piffardi</span>
+              <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">Dominique Piffardi</span>
               <div className=" absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-indigo-500 to-teal-400 gradient-animation"></div>
             </div>
           </Link>
@@ -79,7 +79,7 @@ const Navigation = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 

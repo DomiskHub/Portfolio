@@ -21,7 +21,7 @@ li {
   position: relative;
   padding: 15px 0;
 }
-a {
+.icon {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -49,5 +49,65 @@ a:hover:after {
 @media screen and (max-height: 300px) {
   ul {
     margin-top: 40px;
+  }
+}
+
+// text
+$duration: 2s;
+$iterations: 1;
+$animation-delay: 0s;
+
+.reveal-text {
+  margin-top: 20px;
+  position: relative;
+  font-size: 40px;
+  user-select: none;
+  animation: reveal-text $duration cubic-bezier(0, 0.1, 1, 0) $iterations $animation-delay both;
+  color: #ffffff;
+  white-space: nowrap;
+  font-family: "Work Sans", sans-serif;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation: revealer-text $duration cubic-bezier(0, 0.1, 1, 0) $iterations $animation-delay both;
+  }
+}
+
+@keyframes reveal-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes revealer-text {
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  60% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
   }
 }

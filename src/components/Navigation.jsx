@@ -25,8 +25,8 @@ const Navigation = () => {
             <div className="block py-2 px-3 text-white">
               <div className="rrss relative">
                 <div className="relative z-10 flex items-center justify-center ">
-                  <a href="https://www.linkedin.com/in/dominique-piffardi-hasard-3b9136181/" target="_blank" className="m-3">
-                    <FontAwesomeIcon icon={faLinkedin} className="text-white text-xl icon" />
+                  <a href="https://www.linkedin.com/in/dominique-piffardi-hasard-3b9136181/" target="_blank" className="m-3 icon">
+                    <FontAwesomeIcon icon={faLinkedin} className="text-white text-xl " />
                   </a>
                   <a href="https://github.com/DomiskHub" target="_blank" className="m-3 icon">
                     <FontAwesomeIcon icon={faGithub} className="text-white text-xl" />
@@ -73,12 +73,13 @@ const Navigation = () => {
                 </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/experiencia"
                   href="#"
                   className=" icon block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-violet-300 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Experiencia y Estudios
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
